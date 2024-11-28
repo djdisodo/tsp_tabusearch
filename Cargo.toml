@@ -1,0 +1,34 @@
+[package]
+name = "untitled4"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+plotters = "0.3.7"
+plotters-piston = { path = "../plotters-piston" }
+piston_window = "0.132.0"
+piston2d-gfx_graphics = "0.81.0"
+
+rand = "0.9.0-alpha.2"
+
+ndarray = "0.16.1"
+
+serde = "1.0.210"
+serde_json = "1.0.128"
+serde_derive = "1.0.210"
+
+anyhow = "1.0.89"
+
+arraydeque = "0.5.1"
+
+[[bin]]
+name = "generate_problem"
+path = "src/generate_problem.rs"
+
+[[bin]]
+name = "solve"
+path = "src/main2.rs"
+
+[[bin]]
+name = "solve2"
+path = "src/main2.rs"
